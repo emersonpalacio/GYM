@@ -15,12 +15,12 @@
                 <div class="row">
                     <div class="col-md-4">
                         <h2>Maestros </h2>
-                        <p>
-                            .
-                        </p>
-                        <p>
-                            <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                        </p>
+                         <p>  .     </p>
+
+                        <asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-primary" PostBackUrl="~/Maestros/Productos.aspx">Productos</asp:LinkButton>
+                        <br /><br />
+                        
+                        <asp:LinkButton ID="LinkButton2" runat="server"  class="btn btn-primary" PostBackUrl="~/Maestros/TiposDocumentos.aspx">Tipo Documento</asp:LinkButton>
                     </div>
                     <div class="col-md-4">
                         <h2>Movimientos</h2>

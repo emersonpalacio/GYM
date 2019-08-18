@@ -188,6 +188,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
+    <Content Include="Maestros\Productos.aspx" />
+    <Content Include="Maestros\TiposDocumentos.aspx" />
+    <Content Include="Maestros\Deportisas.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Images\fondo-gyms.jpg" />
     <Content Include="Images\logo.png" />
@@ -383,6 +386,27 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Maestros\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\TiposDocumentos.aspx.cs">
+      <DependentUpon>TiposDocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\TiposDocumentos.aspx.designer.cs">
+      <DependentUpon>TiposDocumentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maestros\Deportisas.aspx.cs">
+      <DependentUpon>Deportisas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maestros\Deportisas.aspx.designer.cs">
+      <DependentUpon>Deportisas.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -397,6 +421,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CAD\CAD.csproj">
+      <Project>{189f1a9d-efb4-4c4a-9feb-95511ceb9317}</Project>
+      <Name>CAD</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
